@@ -4,17 +4,14 @@ body {
 
 .postcard {
 	background: white;
-	width: 400px;
-	height: 300px;
+	padding: 10px;
 	margin: auto;
+	max-width: 500px;
 }
 .postcard-header {
 	display: flex;
 	align-items: center;
-}
-.postcard-header h1 {
-	width: 400px;
-	margin: 0;
+	justify-content: space-between;
 }
 .postcard-header img {
 	width: 50px;
@@ -23,18 +20,13 @@ body {
 .postcard-body {
 	display: flex;
 }
-.body-left p:first-child {
-	margin-top: none;
-	padding: 12px;
-}
 .body-left,
 .body-right {
 	padding: 15px;
 }
 input {
 	border: none;
-	border-bottom: grey;
-	height: 50px;
+	border-bottom: grey solid 1px;
 	width: 100px;
 	margin-bottom: 5px;
 }
@@ -44,9 +36,20 @@ input {
 }
 button {
 	background-color: #e6e6e6;
-	padding: 8px 15px;
+	padding:8px 15px;
 	color: black;
-	margin: 0;
 	display: inline-block;
-	height: 35px;
+	border: none;
+	border-radius:5px;
+	cursor: pointer;
+	font-size: medium;
+}
+
+.body-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.body-left{
+	text-align: justify;
 }
